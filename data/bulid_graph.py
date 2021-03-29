@@ -40,7 +40,7 @@ class PsychologyGraph:
         :return:  None
         """
         print('开始处理数据')
-        with open('data2.json', 'r', encoding='utf-8') as f:
+        with open('data.json', 'r', encoding='utf-8') as f:
             json_dic = json.load(f)
             for disease, info in json_dic.items():
                 self.diseases.append(disease)
