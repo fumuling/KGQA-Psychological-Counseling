@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: english
+Version: 2020.7.0
+Summary: English language utility library for Python
+Home-page: https://github.com/technige/english
+Author: Nigel Small
+Author-email: english@nige.tech
+License: Apache License, Version 2.0
+Project-URL: Bug Tracker, https://github.com/technige/english/issues
+Project-URL: Source Code, https://github.com/technige/english
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: six
+
+*******
+English
+*******
+
+*English* is an English language utility library for Python.
+
+

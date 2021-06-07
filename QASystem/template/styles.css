@@ -1,0 +1,277 @@
+@charset "utf-8";
+/*公共样式*/
+html{font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body{-webkit-overflow-scrolling:touch;margin:0;}
+ul{margin:0;padding:0;list-style:none;outline:none;}
+dl,dd{margin:0;}
+a{display:inline-block;margin:0;padding:0;text-decoration:none;background:transparent;outline:none;color:#000;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;color:currentColor;}
+a,dt,dd{-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;}
+img{border:0;}
+p{margin:0;}
+input,button,select,textarea{margin:0;padding:0;border:0;outline:0;background-color:transparent;}
+/*css reset*/
+body {
+    position: relative;
+}
+
+.dialogue-wrapper {
+    font-size: 14px;
+    color: #fff;
+}
+/*右侧点击按钮*/
+.dialogue-wrapper .dialogue-support-btn {
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    right: 0;
+    margin-top: -70px;
+    padding: 10px 0;
+    width: 40px;
+    height: 120px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, .4);
+    background-color: #5d94f3;
+}
+
+.dialogue-wrapper .dialogue-support-btn .dialogue-support-icon {
+    position: relative;
+    display: inline-block;
+    margin-bottom: -2px;
+    width: 20px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.dialogue-wrapper .dialogue-support-btn .dialogue-support-icon:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    margin-left: -3px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #fff;
+}
+
+.dialogue-wrapper .dialogue-support-btn .dialogue-support-line {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.dialogue-wrapper .dialogue-support-btn .dialogue-support-text {
+    padding: 5px 0;
+    letter-spacing: 4px;
+    writing-mode: vertical-rl;
+    -webkit-user-select: none;
+}
+
+/*底部客服对话框*/
+.dialogue-wrapper .dialogue-main {
+    position: fixed;
+    display: none;
+    right: 100px;
+    bottom: 10px;
+    width: 400px;
+    height: 600px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+
+/*客服对话框头部*/
+.dialogue-wrapper .dialogue-main .dialogue-header {
+    position: relative;
+    padding: 10px;
+    height: 80px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    background-color: #5d94f3;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 2px;
+    font-size: 22px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-service-info {
+    position: relative;
+    top: 50%;
+    margin-top: -20px;
+    height: 40px;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-service-img {
+    display: inline-block;
+    margin: 0 10px 0 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    color: #000;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-service-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-service-detail {
+    font-size: 12px;
+}
+
+/*客服对话框内容*/
+.dialogue-wrapper .dialogue-main .dialogue-contain {
+    overflow-y: auto;
+    padding: 10px;
+    height: 380px;
+    word-wrap: break-word;
+    background-color: #f9f9f9;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-text {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    max-width: 120px;
+    white-space: pre-wrap;
+    border: 1px solid #09d07d;
+    border-radius: 4px;
+    background-color: #09d07d;
+    box-sizing: border-box;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-service-contain {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-service-text {
+    margin-left: 20px;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-service-text:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 10px solid #09d07d;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-customer-contain {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-customer-text {
+    margin-right: 20px;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-customer-text:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid #09d07d;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+/*客服对话框底部与输入*/
+.dialogue-wrapper .dialogue-main .dialogue-submit {
+    position: relative;
+    padding: 10px;
+    height: 100px;
+    color: #000;
+    word-wrap: break-word;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/*空输入提示*/
+.dialogue-wrapper .dialogue-main .dialogue-hint {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    padding: 2px;
+    width: 140px;
+    height: 18px;
+    opacity: 0;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+    background-color: #fff;
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-hint-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    vertical-align: middle;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #5d94f3
+}
+
+.dialogue-wrapper .dialogue-main .dialogue-hint-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*输入框*/
+.dialogue-wrapper .dialogue-submit .dialogue-input-text {
+    overflow-y: auto;
+    display: inline-block;
+    padding: 5px 10px;
+    width: 295px;
+    height: 70px;
+    vertical-align: middle;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    resize: none;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.dialogue-wrapper .dialogue-submit .dialogue-input-tools {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
