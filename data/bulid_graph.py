@@ -12,7 +12,7 @@ class PsychologyGraph:
             host='127.0.0.1',
             http_port=7474,
             user='neo4j',
-            password='123456'
+            password='ccLL.86916'
         )
 
         self.diseases = []  # 疾病
